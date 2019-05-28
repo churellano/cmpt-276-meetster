@@ -2,7 +2,7 @@
 
 ## Team members:
 * **Jeremiah Arellano**
-* **Cathan Hui** - Team lead
+* **Cathan Hui** - Team leader
 * **Mark Angelo Monroy**
 * **Shivansh Sasan**
 * **Grant Zhang**
