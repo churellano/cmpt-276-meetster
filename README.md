@@ -1,4 +1,11 @@
-# cmpt276-temporary-name-
-CMPT 276 project page
+# CMPT-276 Summer 2019: [project name here]
 
-initial commit
+## Team members:
+* **Jeremiah Arellano**
+* **Cathan Hui** - Team lead
+* **Mark Angelo Monroy**
+* **Shivansh Sasan**
+* **Grant Zhang**
+
+
+
