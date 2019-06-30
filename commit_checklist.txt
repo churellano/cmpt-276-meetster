@@ -2,6 +2,6 @@ Checklist for Commits
 
 Cathan: Yes
 Grant: 
-Shiv: 
+Shiv: Yes
 Mark: 
 Jeremiah: 
