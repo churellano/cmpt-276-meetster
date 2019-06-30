@@ -3,7 +3,7 @@ class EventsController < ApplicationController
 	before_action :find_event, only: [:show, :edit, :update, :destroy]
 
 	def index
-		if params [:category].blank?
+		if params[:category].blank?
 		  @events = Event.all.order("created_at DESC")
 		else
 		  @category_id = Category.find_by(name: params[:category]).id
