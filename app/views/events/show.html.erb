@@ -1,0 +1,18 @@
+<h2><%= @event.title %></h2>
+<h3><%= @event.amount %></h3>
+<h4> Category: <%= @event.category.name %></h4>
+<p><%= @event.description %></p>
+<p><%= @event.location %></p>
+
+<%= link_to "Back", root_path %>
+
+<% if user_signed_in? %>
+
+  <% if @event.user_id == current_user.id %>
+
+   <%= link_to "Delete", event_path(@event), method: :delete, data: { confirm: "are you sure?"} %>
+   <%= link_to "Edit", edit_event_path(@event) %>
+
+  <% end %>
+
+<% end %>
