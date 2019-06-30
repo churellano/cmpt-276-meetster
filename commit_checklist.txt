@@ -1,7 +1,7 @@
 Checklist for Commits
 
 Cathan: Yes
-Grant: 
+Grant: Yes
 Shiv: Yes
 Mark: 
 Jeremiah: Yes
