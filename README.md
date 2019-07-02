@@ -8,7 +8,7 @@
 - Grant Zhang
 - Shivansh Sasan
 
-Group GitHub Link: https://github.com/churellano/cmpt276-temporary-name-
+Group GitHub Link: https://github.com/churellano/cmpt-276-meetster
 
 ## Meetster 
 
