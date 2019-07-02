@@ -32,7 +32,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <%Category.all.each do |category| %>
-                  <li class="<% 'active' if params[:category] == categoryname %>">
+                  <li class="<% 'active' if params[:category] == category.name %>">
                     <%= link_to category.name, events_path(category: category.name), class: "link" %>
                   </li>
                 <% end %>
@@ -52,6 +52,9 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    
   </body>
 </html>

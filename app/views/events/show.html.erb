@@ -1,14 +1,30 @@
-<h2><%= @event.title %></h2>
-<h3><%= @event.amount %></h3>
-<h4> Category: <%= @event.category.name %></h4>
-<p><%= @event.description %></p>
-<p><%= @event.location %></p>
+<div class="row">
+
+	<div class="col-md-12">
+           <%= image_tag @event.event_img.url(:event_show), class:"event-show" %>
+    </div>
+
+    <div class="col-md-8">
+        <h2><%= @event.title %></h2>
+        <h3><%= @event.amount %></h3>
+        <h4> Category: <%= @event.category.name %></h4>
+        <p><%= @event.description %></p>
+        <p><%= @event.location %></p>
+    </div>
+
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+
+	</div>
+</div>
 
 <%= link_to "Back", root_path %>
 
 <% if user_signed_in? %>
 
-  <% if @event.user_id == current_user.id %>
+  <% if @event.user_id == current_user.id || current_user.id == 1 %>
 
    <%= link_to "Delete", event_path(@event), method: :delete, data: { confirm: "are you sure?"} %>
    <%= link_to "Edit", edit_event_path(@event) %>

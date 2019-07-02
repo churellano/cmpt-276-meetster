@@ -2,6 +2,7 @@
 
 <%= simple_form_for @event, :html => { :multipart => true } do |f| %>
   <%= f.select :category_id, @categories %>
+  <%= f.file_field :event_img %>
   <%= f.input :title, label: "event title" %>
   <%= f.input :description %>
   <%= f.input :location %>

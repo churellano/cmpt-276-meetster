@@ -2,12 +2,18 @@
 
 <% if @events.count == 0 %>
 
-  <h1>There are no books currently in this category</h1>
+  <h1>There are no events currently in this category</h1>
 
 <% else %>
 
+ <div class="row">
+
   <% @events.each do |event| %>
-    <h2><%= link_to event.title, event_path(event) %></h2>
+    <div class="col-md-3">
+       <a href="/events/<%= event.id %>">
+    	   <%= image_tag event.event_img.url(:event_index), class:"event" %>
+       </a>
+    </div>
   <% end %>
   
 <% end %>

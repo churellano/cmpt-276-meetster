@@ -4,10 +4,10 @@ class EventsController < ApplicationController
 
 	def index
 		if params[:category].blank?
-		  @events = Event.all.order("created_at DESC")
+		   @events = Event.all.order("created_at DESC")
 		else
-		  @category_id = Category.find_by(name: params[:category]).id
-		  @events = Event.where(:category_id => @category_id).order("created_at DESC")
+		   @category_id = Category.find_by(name: params[:category]).id
+		   @events = Event.where(:category_id => @category_id).order("created_at DESC")
 		end
 	end
 
@@ -51,7 +51,7 @@ class EventsController < ApplicationController
     private
 
     def event_params
-    	params.require(:event).permit(:title, :description, :location, :amount, :category_id)
+    	params.require(:event).permit(:title, :description, :location, :amount, :category_id, :event_img)
     end
 
     def find_event
