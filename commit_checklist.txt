@@ -1,7 +1,0 @@
-Checklist for Commits
-
-Cathan: Yes
-Grant: Yes
-Shiv: Yes
-Mark: Yes
-Jeremiah: Yes

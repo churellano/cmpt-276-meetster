@@ -9,11 +9,13 @@
  <div class="row">
 
   <% @events.each do |event| %>
-    <div class="col-md-3">
+    <div class="col-md-4">
        <a href="/events/<%= event.id %>">
     	   <%= image_tag event.event_img.url(:event_index), class:"event" %>
        </a>
     </div>
   <% end %>
+
+</div>
   
 <% end %>
