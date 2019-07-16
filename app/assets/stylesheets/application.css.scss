@@ -25,19 +25,20 @@ p.alert, p.notice {
 	margin: 0;
 }
 
+/* Top menu bar with logo and links to other pages */ 
 .navbar {
 	font-family: 'Ubuntu', sans-serif;
 	text-transform: uppercase;
 }
 .navbar-default {
-	background-color: #A433FF;
-	padding-bottom: 50px;
-	padding-top: 20px;
+	background-color: #6987C9;
+	padding-bottom: 10px;
+	padding-top: 10px;
 
 	.navbar-nav > li > a {
 		color: #222;
 		&:hover {
-			color: darken(#f1c40f, 5%);
+			color: darken(#7880B5, 5%);
 			transition: 0.5s;
 		}
 	}

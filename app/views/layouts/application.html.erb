@@ -10,7 +10,8 @@
   </head>
 
   <body>
-
+  
+    <!-- Top menu bar -->
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -37,45 +38,28 @@
                          <% end %>
                    </ul>
             </li>
-
-
             <% if user_signed_in? %>
                <li><%= link_to "Add Event", new_event_path %> </li>
             <% end %>
         </ul>
       </div>
-
     </nav>
-
-
-
-
-
-<div class="row">
-  <div class="col-lg-12">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-
-
-
-
-
-
-
-    <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
-  <div class="container">
-      <%= yield %>
-  </div>
-
-  
     
+    <!-- Search bar -->
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search events">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    
+    <div class="container">
+        <%= yield %>
+    </div>
+
   </body>
 </html>
