@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'gmaps', '~> 0.0.1'
 gem 'gmaps4rails'
 gem 'simple_form', '~> 4.1'

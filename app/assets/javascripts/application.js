@@ -15,3 +15,12 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require bootstrap
+
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});
+
+$(document).on('click', '.dropdown-menu-button', function (e) {
+    e.stopPropagation()
+});

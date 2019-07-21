@@ -32,8 +32,8 @@ p.alert, p.notice {
 }
 .navbar-default {
 	background-color: #6987C9;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-top: 5px;
 
 	.navbar-nav > li > a {
 		color: #222;
@@ -68,6 +68,8 @@ p.alert, p.notice {
 	background-color: #0066ff;
 	color: #fff;
 }
+
+ul.nav li.dropdown:hover ul.dropdown-menu { display: block; }
 
 .btn-custom {
 	color: darken(#f1c40f, 5%);
