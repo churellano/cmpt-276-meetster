@@ -1,0 +1,4 @@
+<%= simple_form_for([@event, @event.comments.build]) do |f| %>
+	<%= f.input :reply %>
+	<%= f.button :submit, :class => "btn-custom2" %>
+<% end %>

@@ -18,6 +18,15 @@
           <%= link_to image_tag("logo.png", length:'250px', width:'125px'), root_path, class: "navbar-brand" %>
         </div>
 
+
+
+        <ul class="nav navbar-nav navbar-right">
+        <div class="col-md-4">
+          <%= form_for "",url: events_path, role:"search", method: :get do %>
+             <%= text_field_tag :search, @search_term,placeholder: "Search for events" %>
+          <%end%>
+        </ul>
+
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Sign Up", new_user_registration_path %></li>
           <% if user_signed_in? %>
@@ -44,6 +53,8 @@
         </ul>
       </div>
     </nav>
+
+
     
 
     

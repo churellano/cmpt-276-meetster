@@ -1,0 +1,21 @@
+<div class="comment">
+
+	<p class="comment-reply"><%= comment.reply %></p>
+
+
+	<% if user_signed_in? %>
+
+		<% if comment.user_id == current_user.id %>
+
+			<div class="links btn-group">
+
+				<%= link_to "Edit", edit_event_comment_path(comment.event, comment), class: "btn btn-custom" %>
+				<%= link_to "Delete", event_comment_path(comment.event, comment), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
+
+			</div>
+		
+		<% end %>	
+
+	<% end %>
+
+</div>		

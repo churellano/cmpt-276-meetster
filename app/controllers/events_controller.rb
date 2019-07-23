@@ -9,6 +9,11 @@ class EventsController < ApplicationController
 		   @category_id = Category.find_by(name: params[:category]).id
 		   @events = Event.where(:category_id => @category_id).order("created_at DESC")
 		end
+
+		if params[:search]
+			@search_term = params[:search]
+			@events = @events.search_by(@search_term)
+		end
 	end
 
 	def show

@@ -17,6 +17,7 @@
 //= require_tree .
 //= require bootstrap
 
+
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
 });
